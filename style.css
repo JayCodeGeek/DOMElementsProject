@@ -1,0 +1,131 @@
+body{
+    font-family: "Mate SC", serif;
+}
+.title{
+    background-color: #B1AFFF;
+    text-align: center;
+}
+.title > p{
+    font-weight: bold;
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+}
+.title > p::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(45deg,white, gold);
+}
+.title > p:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+.title > p:hover{
+    color: lightgoldenrodyellow;
+}
+button{
+    color: white;
+    border-radius: 20px;
+    border: 0.5px solid black;
+    background-color: rgb(164, 164, 255);
+}
+.center{
+    height: 40vh;
+    background-color: #FDFFC2;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+
+.li1{
+    background-color:lightcoral;
+}
+.li2{
+    background-color: lightgreen;
+}
+.li3{
+    background-color:lightblue;
+}
+.li4{
+    background-color: lightsalmon;
+}
+.li5{
+    background-color: lightseagreen;
+}
+.footer{
+    text-align: center;
+    background-color: #B1AFFF;
+}
+.footer p{
+    margin: 0;
+}
+a{
+    color: black;
+}
+a:hover{
+    font-weight: bold;
+    color: lightgoldenrodyellow;
+}
+@media screen and (min-width: 768px) {
+    .title{
+        font-size: 2rem;
+        height: 10vh;
+        align-content: center;
+    }
+    .title > p{
+        height: 45px;
+    }
+    .center{
+        font-size: 1.5rem;
+        height: 76vh;
+    }
+    ul{
+        margin-top: 30px;
+    }
+    li{
+        width: 97.5%;
+        height: 13.5vh;
+    }
+    button{
+        width: 100px;
+    }
+    .footer{
+        font-size: 1.6rem;
+        height: 13vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .title{
+        font-size: 1.5rem;
+        align-items: center;
+        height: 7vh;
+    }
+    .center {
+        height: 77vh;
+        font-size: 1.2rem;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    ul{
+        margin-top: 20px;
+        position: relative;
+        left: -3%;
+    }
+    li{
+        height: 15vh;
+    }
+    button{
+        width: 80px;
+    }
+    .footer{
+        font-size: 1.3rem;
+    }
+    
+}
